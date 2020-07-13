@@ -1,20 +1,15 @@
 class Human { // This is the parent class
-    constructor() {
-        this.gender = "male";
+    gender = "male";
 
-    }
-    printGender() {
+    printGender = () => {
         console.log(this.gender);
     }
 }
 
 class Person extends Human { // This is the bb class
-    constructor() {
-        super();
-        this.name = "taz";
+    name = "taz";
 
-    }
-    printMyName() {
+    printMyName = () => {
         console.log(this.name);
     }
 }
